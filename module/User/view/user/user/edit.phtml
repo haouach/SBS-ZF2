@@ -1,0 +1,93 @@
+<?php
+// module/User/view/user/user/add.phtml:
+
+$title = 'Utilisateurs';
+$this->headTitle($title);
+?>
+
+<div id="page">
+
+
+
+                    <!-- start page title -->
+                    <div class="page-title">
+                        <div class="in">
+                                <div class="titlebar">	<h2><?php echo $this->escapeHtml($title); ?></h2>	<p>This is a quick overview of some features</p></div>
+
+                                <div class="shortcuts-icons">
+                                    <a class="shortcut tips" href="<?php echo $this->url('user'); ?>" title="Rafraichir les donn&eacute;es"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="<?php echo $this->url('user'); ?>" title="Liste des utilisateurs"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="<?php echo $this->url('user/add'); ?>" title="Ajouter un utilistauer"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="#" title="Chercher"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                </div>
+
+                                <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- START CONTENT -->
+                    <div class="content">
+                    <!-- START FORMULAIRE -->
+
+                        	<div class="simplebox grid740" style="z-index: 720;">
+                            	<div class="titleh" style="z-index: 710;">
+                                	<h3>Modification d'un utilisateur</h3>
+                                    <div class="shortcuts-icons" style="z-index: 700;">	<a href="#" class="shortcut tips" original-title="This is Simple Form"><img width="25" height="25" alt="icon" src="<?php echo $this->basePath(); ?>/img/icons/shortcut/question.png"></a>	</div>
+                                </div>
+                                <div class="body" style="z-index: 690;">
+								<?php
+									$form = $this->form;
+									$form->setAttribute('action', $this->url('editer'));
+									$form->prepare();
+
+                                ?>
+                                  <?php echo $this->form()->openTag($form); ?>
+								  <?php  echo $this->formRow($form->get('iduser')); ?>
+                                  	<div class="st-form-line" style="z-index: 680;">
+                                    	<span class="st-labeltext">Nom</span>
+                                        <?php  echo $this->formRow($form->get('nom')); ?>
+                                    <div class="clear" style="z-index: 670;"></div>
+                                    </div>
+
+                                  	<div class="st-form-line" style="z-index: 660;">
+                                    	<span class="st-labeltext">Pr&eacute;nom</span>
+                                        <?php  echo $this->formRow($form->get('prenom')); ?>
+                                    <div class="clear" style="z-index: 650;"></div>
+                                    </div>
+
+									<div class="st-form-line" style="z-index: 660;">
+                                    	<span class="st-labeltext">Email</span>
+                                        <?php  echo $this->formRow($form->get('email')); ?>
+                                    <div class="clear" style="z-index: 650;"></div>
+                                    </div>
+                                    <!-- This is uniform radio - view this item class -->
+                                  	<div class="st-form-line" style="z-index: 620;">
+                                    	<span class="st-labeltext">Pr&eacute;vil&egrave;ge</span>
+
+                                    	<div  id="uniform-undefined"><?php  echo $this->formRadio($form->get('previlege')); ?></div>
+                                    	<div class="clear" style="z-index: 610;"></div>
+                                    </div>
+
+                                    <div class="button-box" style="z-index: 460;">
+                                   	  <?php echo $this->formSubmit($form->get('submit')); ?>
+                                    </div>
+
+                                  <?php echo $this->form()->closeTag(); ?>
+
+                                </div>
+                            </div>
+
+
+                        <!-- END FORMULAIRE -->
+
+                    </div>
+                    <!-- END CONTENT -->
+
+            </div>
+
+
+
+
+
+

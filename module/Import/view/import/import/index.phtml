@@ -1,0 +1,87 @@
+<?php
+// module/Import/view/import/import/index.phtml:
+
+$title = 'Utilisateurs';
+$this->headTitle($title);
+?>
+
+<div id="page">
+
+
+
+                    <!-- start page title -->
+                    <div class="page-title">
+                        <div class="in">
+                                <div class="titlebar">	<h2><?php echo $this->escapeHtml($title); ?></h2>	<p>This is a quick overview of some features</p></div>
+
+                                <div class="shortcuts-icons">
+                                    <a class="shortcut tips" href="#" title="Refresh"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="#" title="Dashboard"><img src="img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="#" title="Search on This Page"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="#" title="Dashboard is a quick overview of some features"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                </div>
+
+                                <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- START CONTENT -->
+                    <div class="content">
+                    <!-- START TABLE -->
+
+                        <div class="simplebox grid740">
+
+                        	<div class="titleh">
+                            <h3>Liste des utilisateurs</h3>
+                            <div class="shortcuts-icons " >
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Ajouter un utilistauer"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+
+
+                                <table id="myTable" class="tablesorter">
+                                	<thead>
+                                		<tr>
+                                			<th>Nom et Pr&eacute;nom</th>
+                                			<th>Email</th>
+                                			<th>Pr&eacute;vil&egrave;ge</th>
+                                			<th>Actions</th>
+                                		</tr>
+                                	</thead>
+
+                                    <tbody>
+                                     <?php foreach ($users as $user) : ?>
+										<tr>
+											<td><?php echo $this->escapeHtml($user->nom);?> <?php echo $this->escapeHtml($user->prenom);?></td>
+											<td><?php echo $this->escapeHtml($user->email);?></td>
+											<td><?php if($user->previlege==1) echo 'Administrateur'; else echo 'Testeur';?></td>
+											<td>
+												<a href="<?php echo $this->url('user',
+													array('action'=>'edit', 'id' => $user->id));?>">Edit</a>
+												<a href="<?php echo $this->url('user',
+													array('action'=>'delete', 'id' => $user->id));?>">Delete</a>
+											</td>
+										</tr>
+									<?php endforeach; ?>
+                                    </tbody>
+                                </table>
+
+
+                        </div>
+                        <!-- END TABLE -->
+
+                    </div>
+                    <!-- END CONTENT -->
+
+            </div>
+
+
+
+
+
+

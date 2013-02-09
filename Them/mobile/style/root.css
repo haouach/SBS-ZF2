@@ -1,0 +1,53 @@
+
+
+body{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background:#1C4D71 url(../img/bg.png) repeat-x top;}
+
+
+.main{
+	width:824px;
+	height:850px;
+	background:url(../img/main-bg.jpg) no-repeat right top;
+	margin:0px auto;}
+	
+
+.left-side{
+	width:323px;
+	float:left;
+	text-align:center;
+	padding-left:33px;}
+.right-side{
+	width:399px;
+	float:right;
+	padding-top:186px;}
+
+.logo{
+	padding:70px 0 0 0;
+	height:240px;}
+
+.icon-txt{
+	width:255px;
+	float:left;
+	padding-top:33px;}
+.buttons{
+	width:61px;
+	float:right;}
+
+.iframediv{
+	padding:0;}
+
+
+.backnormal{
+	position:absolute;
+	left:0;
+	top:190px;
+	width:140px;}
+.backnormal a{
+	display:block;
+	height:132px;
+	background:url(../img/back.png) no-repeat 0px 0px;
+	text-indent:-9999px;}
+.backnormal a:hover{
+	background:url(../img/back.png) no-repeat 0px -134px;
+}

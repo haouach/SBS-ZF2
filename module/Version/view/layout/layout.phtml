@@ -1,0 +1,74 @@
+<?php echo $this->doctype(); ?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php //echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+										        ->prependStylesheet($this->basePath() . '/style/jquery-plugin-base.css')
+										        ->prependStylesheet($this->basePath() . '/style/jquery-ui.css')
+										        ->prependStylesheet($this->basePath() . '/style/typography.css')
+										        ->prependStylesheet($this->basePath() . '/style/grid.css')
+										        ->prependStylesheet($this->basePath() . '/style/root.css')
+										        ->prependStylesheet($this->basePath() . '/style/reset.css')
+		?>
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/media/js/jquery.dataTables.js', 'text/javascript')
+                                      ->prependFile('https://www.google.com/jsapi')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.accordion.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.tabs.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.datepicker.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.slider.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.widget.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.mouse.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.core.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.prettyPhoto.js')
+                                      ->prependFile($this->basePath() . '/js/fullcalendar.min.js')
+                                      ->prependFile($this->basePath() . '/js/popup.js')
+                                      ->prependFile($this->basePath() . '/js/analytics.js')
+                                      ->prependFile($this->basePath() . '/js/raphael.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.tablesorter.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.wysiwyg.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.uniform.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.tipsy.js')
+                                      ->prependFile($this->basePath() . '/js/toogle.js')
+                                      ->prependFile($this->basePath() . '/js/jquery-settings.js')
+        							  ->prependFile($this->basePath() . '/media/js/jquery.js')?>
+
+
+<style>#stats{display:block;}</style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <!-- START HEADER -->
+
+    <!-- END HEADER -->
+
+    <!-- START MAIN -->
+        <div id="main">
+
+
+
+
+            <!-- START PAGE -->
+
+				<?php echo $this->content; ?>
+
+			<!-- END PAGE -->
+
+        <div class="clear"></div>
+        </div>
+        <!-- END MAIN -->
+
+        <!-- START FOOTER -->
+        <div id="footer">
+            <div class="left-column">Copyright 2013 - All rights reserved.</div>
+            <div class="right-column">SBS test by <a href="#" >R&D SBS OTN</a></div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    </body>
+</html>

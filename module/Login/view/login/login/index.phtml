@@ -1,0 +1,30 @@
+<?php
+// module/login/view/album/album/index.phtml:
+
+$title = 'My Logins';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<p>
+    <a href="<?php echo $this->url('login', array('action'=>'add'));?>">Add new login</a>
+</p>
+
+<table class="table">
+<tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($logins as $login) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($login->title);?></td>
+    <td><?php echo $this->escapeHtml($login->artist);?></td>
+    <td>
+        <a href="<?php echo $this->url('login',
+            array('action'=>'edit', 'id' => $login->id));?>">Edit</a>
+        <a href="<?php echo $this->url('login',
+            array('action'=>'delete', 'id' => $login->id));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>

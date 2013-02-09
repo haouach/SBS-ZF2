@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cupcake Premium Admin Template</title>
+	
+    <link rel="stylesheet" type="text/css" href="style/reset.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/root.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/grid.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/typography.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="style/jquery-plugin-base.css" />
+    
+    <!--[if IE 7]>	<link rel="stylesheet" type="text/css" href="style/ie7-style.css" />	<![endif]-->
+    
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery-settings.js"></script>
+	<script type="text/javascript" src="js/toogle.js"></script>
+	<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/jquery.wysiwyg.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="js/raphael.js"></script>
+	<script type="text/javascript" src="js/analytics.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.tabs.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+
+</head>
+<body>
+
+
+<div class="wrapper">
+
+
+
+
+	<!-- START HEADER -->
+    <div id="header">
+    
+    
+    	<!-- logo -->
+    	<div class="logo">	<a href="index.html"><img src="img/logo.png" width="112" height="35" alt="logo"/></a>	</div>
+        
+        
+        <!-- notifications -->
+        <div id="notifications">
+        	<a href="index.html" class="qbutton-left"><img src="img/icons/header/dashboard.png" width="16" height="15" alt="dashboard" /></a>
+        	<a href="#" class="qbutton-normal tips"><img src="img/icons/header/message.png" width="19" height="13" alt="message" /> <span class="qballon">23</span> </a>
+        	<a href="#" class="qbutton-right"><img src="img/icons/header/support.png" width="19" height="13" alt="support" /> <span class="qballon">8</span> </a>
+          <div class="clear"></div>
+        </div>
+        
+        
+        <!-- quick menu -->
+        <div id="quickmenu">
+        	<a href="#" class="qbutton-left tips" title="Add a new post"><img src="img/icons/header/newpost.png" width="18" height="14" alt="new post" /></a>
+        	<a id="open-stats" href="#" class="qbutton-right tips" title="Statistics"><img src="img/icons/header/graph.png" width="17" height="15" alt="graph" /></a>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <!-- profile box -->
+        <div id="profilebox">
+        	<a href="#" class="display">
+            	<img src="img/simple-profile-img.jpg" width="33" height="33" alt="profile"/>	<b>Logged in as</b>	<span>Administrator</span>
+            </a>
+            
+            <div class="profilemenu">
+            	<ul>
+                	<li><a href="#">Account Settings</a></li>
+                	<li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        
+        <div class="clear"></div>
+    </div>
+    <!-- END HEADER -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- START MAIN -->
+    <div id="main">
+    
+		
+        
+        
+        
+        <!-- START SIDEBAR -->
+        <div id="sidebar">
+        	
+            <!-- start searchbox -->
+            <div id="searchbox">
+            	<div class="in">
+               	  <form id="form1" name="form1" method="post" action="">
+                  	<input name="textfield" type="text" class="input" id="textfield" onfocus="$(this).attr('class','input-hover')" onblur="$(this).attr('class','input')"  />
+               	  </form>
+            	</div>
+            </div>
+            <!-- end searchbox -->
+            
+            <!-- start sidemenu -->
+            <div id="sidemenu">
+            	<ul>
+                	<li><a href="index.html"><img src="img/icons/sidemenu/laptop.png" width="16" height="16" alt="icon"/>Dashboard</a></li>
+                    <li><a href="form-elements.html"><img src="img/icons/sidemenu/copy.png" width="16" height="16" alt="icon"/>Form Elements</a></li>
+                    <li><a href="table-chart.html"><img src="img/icons/sidemenu/user.png" width="16" height="16" alt="icon"/>Table &amp; Chart</a></li>
+                	<li><a href="interface-elements.html"><img src="img/icons/sidemenu/lock.png" width="16" height="16" alt="icon"/>Interface Elements</a></li>
+                    <li><a href="typography.html"><img src="img/icons/sidemenu/file_edit.png" width="16" height="16" alt="icon"/>Typography	</a></li>
+                    <li><a href="gallery.html"><img src="img/icons/sidemenu/image.png" width="16" height="16" alt="icon"/>Gallery &amp; Media 	<span class="ballon">9</span>	</a></li>
+                    <li class="active"><a href="widgets.html"><img src="img/icons/sidemenu/star.png" width="16" height="16" alt="icon"/>Widgets</a></li>
+                    
+                    <!-- start submenu with icon -->
+                    <li class="subtitle">
+                    	<a class="action tips-right" href="#" title="Submenu with icon"><img src="img/icons/sidemenu/mail.png" width="16" height="16" alt="icon"/>Submenu<img src="img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /></a>
+                    	<ul class="submenu">
+                        <li><a href="#"><img src="img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Search File</a></li>
+                        <li><a href="#"><img src="img/icons/sidemenu/print.png" width="16" height="16" alt="icon"/>New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#"><img src="img/icons/sidemenu/trash.png" width="16" height="16" alt="icon"/>Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu with icon -->
+
+                    <li><a href="error-pages.html"><img src="img/icons/sidemenu/comment.png" width="16" height="16" alt="icon"/>Error Pages</a></li>
+                    <li><a href="buttons-icons.html"><img src="img/icons/sidemenu/arrow_down.png" width="16" height="16" alt="icon"/>Button &amp; Icons</a></li>
+                    <li><a href="grid-styles.html"><img src="img/icons/sidemenu/file.png" width="16" height="16" alt="icon"/>Grid Styles	<span class="ballon">67</span>	</a></li>
+                    <li><a href="alert-dialog-boxes.html"><img src="img/icons/sidemenu/attach.png" width="16" height="16" alt="icon"/>Alert &amp; Dialog Boxes</a></li>
+                    <li><a href="calendar.html"><img src="img/icons/sidemenu/calendar.png" width="16" height="16" alt="icon"/>Calendar</a></li>
+                    
+                    <!-- start submenu without icon -->
+                    <li class="subtitle">
+                    	<a class="action" href="#"><img src="img/icons/sidemenu/download.png" width="16" height="16" alt="icon"/>Submenu Text<img src="img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /> </a>
+                    	<ul class="submenu">
+                        <li><a href="#">Search File</a></li>
+                        <li><a href="#">New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#">Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu without icon -->
+                    
+                </ul>
+            </div>
+            <!-- end sidemenu -->
+            
+        </div>
+        <!-- END SIDEBAR -->
+        
+        
+        
+        
+        
+        
+        
+        <!-- START PAGE -->
+        <div id="page">
+        	
+            	<!-- start stats -->
+                <div id="stats">
+                    <!-- use it up/down on <b> tag for different colors -->
+                	<div class="column">	<b>$326.45</b>	Earnings of today</div>
+                	<div class="column">	<b>$96.25</b>	Earnings of last hour</div>
+                	<div class="column">	<b>23.695</b>	Total Sales</div>
+                	<div class="column">	<b class="down">46.230</b>	Active Comments</div>
+                    <!-- this is last column -->
+                	<div class="column last">	<b class="up">$3.928</b>	every per hours</div>
+                    <a href="#" title="Close Stats" class="close tips">close</a>
+                    <img src="img/icons/mini/stats-arrow-top.png" width="17" height="9" alt="arrow" class="arrow" />
+                </div>
+                <!-- end stats -->
+            	
+                
+                <!-- start page title -->
+                <div class="page-title">
+                	<div class="in">
+                    		<div class="titlebar">	<h2>WIDGETS</h2>	<p>User friendly widget list</p></div>
+                            
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Refresh"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Dashboard"><img src="img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Search on This Page"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Information for this page"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            
+                            <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                
+                
+                
+                
+                
+                
+                
+                	<!-- START CONTENT -->
+                    <div class="content">
+                    		
+                            
+                        
+                        
+                        <!-- start pagewrap -->
+                        <div class="grid740">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Page Wrap</h3>
+                                <p>You can use this top on the content if you wish</p>
+                            </div>
+                            
+                                	<ul class="pagewrap">
+                                    	<li><a href="#">Dashboard</a></li>
+                                    	<li><a href="#">User Profiles</a></li>
+                                    	<li><a href="#">Edit</a></li>
+                                    </ul>
+                            
+                        </div>
+                        <!-- end pagewrap -->    
+                    		
+                            
+                        
+                        
+                        <!-- start statistics -->
+                        <div class="grid360-left">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Statistics</h3>
+                                <p>Some statistics from application</p>
+                            </div>
+                            
+                            		<!-- start statistics codes -->
+                                    <div class="simplebox">
+                                    	<div class="titleh"><h3>Statistics</h3></div>
+                                        <div class="body">
+                                        	
+                                            <ul class="statistics">
+                                            	<li>Total Posts	<p>	<span class="green"><b>6</b> unapproved</span> - <span class="blue"><b>652</b> approved</span>	</p>	</li>
+                                            	<li>Tags	<p>	<span class="red"><b>965</b> active tags</span></p>	</li>
+                                            	<li>Comments	<p>	<span class="green">5 unapproved</span> - <span class="blue">265 approved</span> - <span class="red">6 spam</span>	</p>	</li>
+                                            	<li>Plugins	<p>	<span class="blue"><b>9</b> active</span> - <span class="red"><b>2</b> inactive</span></p>	</li>
+                                            	<li>Last Updates	<p>	9 Sep 2011	</p>	</li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                            		<!-- end statistics codes -->
+                                    
+                            
+                        </div>
+                        <!-- end statistics -->
+                    		
+                            
+                        
+                        
+                        
+                        <!-- start Toggle Message -->
+                        <div class="grid360-right">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Toggle Message</h3>
+                                <p>Toggle message box</p>
+                            </div>
+                            
+                            		<!-- Toggle Message -->
+                                    <div class="toggle-message">
+                                    	<h3 class="title">Simple Toggle Title	<img src="img/icons/mini/arrow-down.png" alt="icon" class="d-icon"/></h3>
+                                        <p class="hide-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate...</p>
+                                    </div>
+                                    
+                            
+                        </div>
+                        <!-- end Toggle Message -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- start tabs -->
+                        <div class="grid360-left">
+                        
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Tabs</h3>
+                                <p>Tab navigation</p>
+                            </div>
+                            
+                            
+                            <!-- start tabs codes -->
+                            <script type="text/javascript">
+								$(function() {
+										   $( "#tabs" ).tabs();
+								});
+							</script>
+                            
+                            
+                            <div id="tabs">
+                            
+                            	<ul>
+                                	<li><a href="#tabs-1">Tab 1</a></li>
+                                	<li><a href="#tabs-2">Tab 2</a></li>
+                                	<li><a href="#tabs-3">Tab 3</a></li>
+                                    
+                                </ul>
+                                
+                                <div id="tabs-1">
+                                	<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. 
+                                    Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales 
+                                    tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                                </div>
+                                
+                                <div id="tabs-2">
+                                	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate...</p>
+                                </div>
+                                
+                                <div id="tabs-3">
+                                	<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. 
+                                    Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales 
+                                    tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                                </div>
+                                
+                           	</div>
+                            <!-- end tabs codes -->
+
+                        
+                        </div>
+                        <!-- end tabs -->
+                           
+                           
+                           
+                            
+
+                        <!-- start Accordion -->
+                        <div class="grid360-right">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Accordion Menu</h3>
+                                <p>Simple accordion menu</p>
+                            </div>
+                            
+                        <!-- start accordion codes -->
+                            <script type="text/javascript">
+								$(function() {
+										   $( "#accordion" ).accordion();
+								});
+							</script>
+
+
+                            	<div id="accordion">
+                                
+                                	<h3><a href="#">Accordion menu 1</a></h3>
+                                    <div class="in-accordion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea... nisl ut aliquip ex ea... nisl ut aliquip ex ea... nisl ut aliquip ex ea... nisl ut aliquip ex ea...</div>
+                                    
+                                	<h3><a href="#">Accordion menu 2</a></h3>
+                                    <div class="in-accordion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat </div>
+                                    
+                                	<h3><a href="#">Accordion menu 3</a></h3>
+                                    <div class="in-accordion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea...</div>
+                                    
+                                </div>
+                        <!-- end accordion codes -->
+                            
+                            
+                        
+                        </div>
+                        <!-- end Accordion -->
+                           
+                           
+                           
+                            
+						<div class="clear"></div>
+                        
+                        
+                        
+                        <!-- start Image Box -->
+                        <div class="grid360-left">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Images Box</h3>
+                                <p>Image box widget</p>
+                            </div>
+                            
+                            
+                        <!-- start Image Box codes -->
+                        	<div class="simplebox">
+                            	<div class="titleh"><h3>Simple Images Box</h3></div>
+                                <div class="body">
+                                	
+                                    <div class="imagebox">
+                                    	<img src="img/simple/photo1.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo2.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo3.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo4.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo5.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo1.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo2.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo3.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo4.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo5.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo1.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo2.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo6.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo4.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo5.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo6.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo4.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<img src="img/simple/photo5.jpg" width="46" height="38" alt="img" title="Photo Title" class="tips"/>
+                                    	<div class="clear"></div>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        <!-- end Image Box codes -->
+                            
+                            
+                        
+                        </div>
+                        <!-- end Image Box -->
+                           
+                           
+                           
+                            
+
+
+                        <!-- start Loading Box -->
+                        <div class="grid360-right">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Loading Box</h3>
+                                <p>Simple loader box</p>
+                            </div>
+                            
+                            
+                        	<div class="loadingbox">
+                            	<img src="img/loading/1.gif" width="40" height="40" alt="loading-icon" />
+                                <h3>Loading...</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...</p>
+                            </div>
+                            
+                            
+                        
+                        </div>
+                        <!-- end Loading Box -->
+                           
+                           
+                           
+                            
+
+
+
+
+                      <div class="clear"></div>
+                    </div>
+                    <!-- END CONTENT -->
+                
+            
+            
+            
+            
+            
+            
+        </div>
+        <!-- END PAGE -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="clear"></div>
+    </div>
+    <!-- END MAIN -->
+    
+    
+    
+    
+    
+    
+    <!-- START FOOTER -->
+    <div id="footer">
+    	<div class="left-column">© Copyright 2012 - All rights reserved.</div>
+        <div class="right-column">Cupcake theme by <a href="http://themeforest.net/user/egemem" target="_blank">egemem</a></div>
+    </div>
+    <!-- END FOOTER -->
+    
+    
+    
+    
+    
+
+
+
+
+
+</div>
+</body>
+</html>

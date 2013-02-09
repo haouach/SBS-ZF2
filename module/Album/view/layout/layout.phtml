@@ -1,0 +1,166 @@
+<?php echo $this->doctype(); ?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php //echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+										        ->prependStylesheet($this->basePath() . '/style/jquery-plugin-base.css')
+										        ->prependStylesheet($this->basePath() . '/style/jquery-ui.css')
+										        ->prependStylesheet($this->basePath() . '/style/typography.css')
+										        ->prependStylesheet($this->basePath() . '/style/grid.css')
+										        ->prependStylesheet($this->basePath() . '/style/root.css')
+										        ->prependStylesheet($this->basePath() . '/style/reset.css')
+		?>
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/media/js/jquery.dataTables.js', 'text/javascript')
+                                      ->prependFile('https://www.google.com/jsapi')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.accordion.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.tabs.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.datepicker.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.slider.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.widget.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.mouse.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.ui.core.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.prettyPhoto.js')
+                                      ->prependFile($this->basePath() . '/js/fullcalendar.min.js')
+                                      ->prependFile($this->basePath() . '/js/popup.js')
+                                      ->prependFile($this->basePath() . '/js/analytics.js')
+                                      ->prependFile($this->basePath() . '/js/raphael.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.tablesorter.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.wysiwyg.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.uniform.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.tipsy.js')
+                                      ->prependFile($this->basePath() . '/js/toogle.js')
+                                      ->prependFile($this->basePath() . '/js/jquery-settings.js')
+        							  ->prependFile($this->basePath() . '/media/js/jquery.js')?>
+
+
+<style>#stats{display:block;}</style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <!-- START HEADER -->
+        <div id="header">
+
+
+            <!-- logo -->
+            <div class="logo">	<a href="index.html"><img src="<?php echo $this->basePath(); ?>/img/logo.png" width="112" height="35" alt="logo"/></a>	</div>
+
+			<?php if($this->zfcUserIdentity()){?>
+            <!-- notifications -->
+            <div id="notifications">
+                <a href="index.html" class="qbutton-left"><img src="<?php echo $this->basePath(); ?>/img/icons/header/dashboard.png" width="16" height="15" alt="dashboard" /></a>
+                <a href="#" class="qbutton-normal tips"><img src="<?php echo $this->basePath(); ?>/img/icons/header/message.png" width="19" height="13" alt="message" /> <span class="qballon">23</span> </a>
+                <a href="#" class="qbutton-right"><img src="<?php echo $this->basePath(); ?>/img/icons/header/support.png" width="19" height="13" alt="support" /> <span class="qballon">8</span> </a>
+              <div class="clear"></div>
+            </div>
+         <!-- quick menu -->
+        <div id="quickmenu">
+        	<a href="#" class="qbutton-left tips" title="Add a new post"><img src="<?php echo $this->basePath(); ?>/img/icons/header/newpost.png" width="18" height="14" alt="new post" /></a>
+        	<a id="open-stats" href="#" class="qbutton-right tips" title="Statistics"><img src="<?php echo $this->basePath(); ?>/img/icons/header/graph.png" width="17" height="15" alt="graph" /></a>
+            <div class="clear"></div>
+        </div>
+
+
+        <!-- profile box -->
+        <div id="profilebox">
+        	<a href="#" class="display">
+            	<img src="<?php echo $this->basePath(); ?>/img/simple-profile-img.jpg" width="33" height="33" alt="profile"/>	<b>Logged in as</b>	<span>Administrator</span>
+            </a>
+
+            <div class="profilemenu">
+            	<?php if($this->zfcUserIdentity()){?>
+            	<ul>
+                	<li><a href="#"><?php echo $this->zfcUserDisplayName(); ?></a></li>
+                	<li><a href="<?php echo $this->url('zfcuser/logout') ?>">Logout</a></li>
+                </ul>
+                <?php }?>
+            </div>
+
+        </div>
+		<?php }?>
+
+        <div class="clear"></div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- START MAIN -->
+        <div id="main">
+
+
+
+
+
+            <!-- START SIDEBAR -->
+            <div id="sidebar">
+				<?php if($this->zfcUserIdentity()){?>
+                <!-- start searchbox -->
+                <div id="searchbox">
+                    <div class="in">
+                      <form id="form1" name="form1" method="post" action="<?php echo $this->basePath(); ?>">
+                        <input name="textfield" type="text" class="input" id="textfield" onfocus="$(this).attr('class','input-hover')" onblur="$(this).attr('class','input')"  />
+                      </form>
+                    </div>
+                </div>
+                <!-- end searchbox -->
+
+                <!-- start sidemenu -->
+                <div id="sidemenu">
+                    <ul>
+                        <li><a class="action tips-right" title="Tableau de bord" href="<?php echo $this->basePath(); ?>"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/laptop.png" width="16" height="16" alt="icon"/>Tableau de bord</a></li>
+                        <li class="active"><a class="action tips-right"  title="Gestion des utilisateurs" href="<?php echo $this->basePath(); ?>/user"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/user.png" width="16" height="16" alt="icon"/>Utilisateurs</a></li>
+
+                        <!-- start submenu with icon -->
+                        <li class="subtitle">
+                            <a class="action tips-right" href="#" title="Gestion des Tests"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/star.png" width="16" height="16" alt="icon"/>Gestion des Tests<img src="<?php echo $this->basePath(); ?>/img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /></a>
+                            <ul class="submenu">
+                            <li><a href="<?php echo $this->basePath(); ?>/projet"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Liste des Projets</a></li>
+                            <li><a href="<?php echo $this->basePath(); ?>/test"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Liste des Tests</a></li>
+                            <li><a href="<?php echo $this->basePath(); ?>/excel/add"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Liste des Import</a></li>
+                            </ul>
+                        </li>
+                        <!-- end submenu with icon -->
+                        <!-- start submenu without icon -->
+                        <li class="subtitle">
+                            <a class="action" href="#"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/download.png" width="16" height="16" alt="icon"/>Submenu Text<img src="<?php echo $this->basePath(); ?>/img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /> </a>
+                            <ul class="submenu">
+                            <li><a href="#">Search File</a></li>
+                            <li><a href="#">New Files	<span class="ballon">693</span>	</a></li>
+                            <li><a href="#">Others	<span class="ballon">4</span>	</a></li>
+                            </ul>
+                        </li>
+                        <!-- end submenu without icon -->
+
+                    </ul>
+                </div>
+                <!-- end sidemenu -->
+				 <?php }else{?>
+				 <img src="<?php echo $this->basePath(); ?>/img/login.png" width="186" height="186" style="margin-top:100px;"/>
+				 <?php }?>
+            </div>
+            <!-- END SIDEBAR -->
+
+
+            <!-- START PAGE -->
+
+				<?php echo $this->content; ?>
+
+			<!-- END PAGE -->
+
+        <div class="clear"></div>
+        </div>
+        <!-- END MAIN -->
+
+        <!-- START FOOTER -->
+        <div id="footer">
+            <div class="left-column">Copyright 2013 - All rights reserved.</div>
+            <div class="right-column">SBS test by <a href="#" >R&D SBS OTN</a></div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    </body>
+</html>

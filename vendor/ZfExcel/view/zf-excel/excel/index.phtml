@@ -1,0 +1,88 @@
+<?php
+$title = 'Gestion des Excel';
+$this->headTitle($title);
+
+?>
+
+<div id="page">
+
+
+
+                    <!-- start page title -->
+                    <div class="page-title">
+                        <div class="in">
+                                <div class="titlebar">	<h2><?php echo $this->escapeHtml($title); ?></h2>	<p>This is a quick overview of some features</p></div>
+
+
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- START CONTENT -->
+                    <div class="content">
+                    <!-- START TABLE -->
+
+
+		<!-- Start Important prettyPhoto Js Codde -->
+
+
+		<!-- End Important prettyPhoto Js Codde -->
+                        <div class="simplebox grid740">
+
+                        	<div class="titleh">
+                            <h3>Liste des Excel</h3>
+                            <div class="shortcuts-icons " >
+                            	<a class="shortcut tips" href="<?php echo $this->basePath(); ?>/excel/add#iframe=true&width=570&height=350" rel="prettyPhoto[iframes][add]"  title="Ajouter un nouveau Excel"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/plus.png" width="25" height="25" alt="Ajouter un nouveau Excel" /></a>
+                               <a class="shortcut tips" href="<?php echo $this->url('zfexcel'); ?>" title="Rafraichir les donn&eacute;es"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+
+		<script type="text/javascript" charset="utf-8">
+								$(document).ready(function() {
+  								oTable = $('#myTable').dataTable({
+    							"bJQueryUI": true,
+    							"sPaginationType": "full_numbers"
+    							});
+  							} );
+
+  	  </script>
+                      <div id="demo">
+<table cellpadding="0" cellspacing="0" border="0" class="display data-table"  id="myTable" width="100%">
+	<thead  >
+		<tr>
+             <th>ID</th>
+             <th>Titre</th>
+             <th>Actions</th>
+        </tr>
+	</thead>
+	<tbody>
+		 <?php foreach ($excel as $liste) : ?>
+										<tr>
+											<td><?php echo $this->escapeHtml($liste->idexcel);?> </td>
+											<td><?php echo $this->escapeHtml($liste->name);?></td>
+
+										</tr>
+									<?php endforeach; ?>
+	</tbody>
+</table>
+</div>
+
+
+			<script type="text/javascript" charset="utf-8">
+				$(document).ready(function(){
+					$("a[rel^='prettyPhoto']").prettyPhoto({
+						custom_markup: '<div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1252239" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+						changepicturecallback: function(){ _bsap.exec(); }
+					});
+
+				});
+				</script>
+
+
+                    </div>
+                    <!-- END CONTENT -->
+
+            </div>
+
+</div>
+

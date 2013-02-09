@@ -1,0 +1,91 @@
+<?php echo $this->doctype(); ?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php //echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/style/reset.css')
+						->prependStylesheet($this->basePath() . '/style/root.css')
+						->prependStylesheet($this->basePath() . '/style/grid.css')
+						->prependStylesheet($this->basePath() . '/style/typography.css')
+						->prependStylesheet($this->basePath() . '/style/jquery-ui.css')
+						->prependStylesheet($this->basePath() . '/style/jquery-plugin-base.css')
+						?>
+
+        <!-- Scripts -->
+    <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery-ui-1.8.11.custom.min.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery-settings.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/toogle.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.wysiwyg.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/raphael.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/analytics.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/popup.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.datepicker.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.tabs.js"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.ui.accordion.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.dataTables.js"></script>
+<style>#stats{display:block;}</style>
+    </head>
+    <body>
+    <div class="wrapper">
+
+	 <!-- START HEADER -->
+        <div id="header">
+
+
+            <!-- logo -->
+            <div class="logo">	<a href="index.html"><img src="<?php echo $this->basePath(); ?>/img/logo.png" width="112" height="35" alt="logo"/></a>	</div>
+
+
+
+    </div>
+    <!-- END HEADER -->
+
+
+    <!-- START MAIN -->
+        <div id="main">
+
+
+
+
+
+            <!-- START SIDEBAR -->
+            <div id="sidebar">
+
+            </div>
+            <!-- End SIDEBAR -->
+            <!-- START PAGE -->
+
+				<?php echo $this->content; ?>
+
+			<!-- END PAGE -->
+
+        	<div class="clear"></div>
+
+        </div>
+        <!-- END MAIN -->
+
+        <!-- START FOOTER -->
+        <div id="footer">
+            <div class="left-column">Copyright 2013 - All rights reserved.</div>
+            <div class="right-column">SBS test by <a href="#" >R&D SBS OTN</a></div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<?php
+// module/test/view/test/test/index.phtml:
+
+$title = 'Gestion des Tests';
+$this->headTitle($title);
+?>
+
+<div id="page">
+
+
+
+                    <!-- start page title -->
+                    <div class="page-title">
+                        <div class="in">
+                                <div class="titlebar">	<h2><?php echo $this->escapeHtml($title); ?></h2>	<p>This is a quick overview of some features</p></div>
+
+                                <div class="shortcuts-icons">
+                                    <a class="shortcut tips" href="<?php echo $this->url('test'); ?>" title="Rafraichir les donn&eacute;es"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="<?php echo $this->url('test'); ?>" title="Liste des Tests"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="<?php echo $this->url('test/add'); ?>" title="Ajouter un Test"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                    <a class="shortcut tips" href="#" title="Chercher"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                </div>
+
+                                <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- START CONTENT -->
+                    <div class="content">
+                    <!-- START TABLE -->
+
+                        <div class="simplebox grid740">
+
+                        	<div class="titleh">
+                            <h3>Liste des Tests</h3>
+                            <div class="shortcuts-icons " >
+                            	<a class="shortcut tips" href="<?php echo $this->url('test/add'); ?>" title="Ajouter un Test"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Chercher"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="<?php echo $this->url('test'); ?>" title="Rafraichir les donn&eacute;es"><img src="<?php echo $this->basePath(); ?>/img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+
+		<script type="text/javascript" charset="utf-8">
+								$(document).ready(function() {
+  								oTable = $('#myTable').dataTable({
+    							"bJQueryUI": true,
+    							"sPaginationType": "full_numbers"
+    							});
+  							} );
+
+								function showUrlInDialog(url){
+									  var tag = $("<div></div>");
+									  tag.html('<iframe style="border: 0px; " src="' + url + '" width="100%" height="100%"></iframe>').dialog({modal: true}).dialog('open');
+
+									}
+  	  </script>
+                      <div id="demo">
+<table cellpadding="0" cellspacing="0" border="0" class="display data-table"  id="myTable" width="100%">
+	<thead  >
+		<tr>
+             <th>ID</th>
+             <th>Titre</th>
+             <th>Date</th>
+             <th>Actions</th>
+        </tr>
+	</thead>
+	<tbody>
+		 <?php foreach ($tests as $liste) : ?>
+										<tr>
+											<td><?php echo $this->escapeHtml($liste->idtest);?> </td>
+											<td><?php echo $this->escapeHtml($liste->titretest);?></td>
+											<td><?php echo $this->escapeHtml($liste->date);?></td>
+											<td align="center">
+												<a href="<?php echo $this->url('edittest',
+													array('id' => $liste->idtest));?>" class="tips" title="Modifier"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/file_edit.png" width="16" height="16" alt="icon" /></a>
+												<a href="<?php echo $this->url('deletetest',
+													array('id' => $liste->idtest));?>" class="tips" title="Supprimer"><img src="<?php echo $this->basePath(); ?>/img/icons/sidemenu/trash.png" width="16" height="16" alt="icon" /></a>
+											</td>
+										</tr>
+									<?php endforeach; ?>
+	</tfoot>
+</table>
+			</div>
+
+
+				<!-- END BuySellAds.com Ad Code -->
+
+				<p><a href="http://127.0.0.1:8387/sbs/zf-tuto/public/test" rel="prettyPhoto">Open ads</a></p>
+
+				<script type="text/javascript" charset="utf-8">
+				$(document).ready(function(){
+					$("a[rel^='prettyPhoto']").prettyPhoto({
+						custom_markup: '<div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1252239" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+						changepicturecallback: function(){ _bsap.exec(); }
+					});
+				});
+				</script>
+
+                    </div>
+                    <!-- END CONTENT -->
+
+            </div>
+
+
+
+
+
+

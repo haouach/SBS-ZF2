@@ -1,0 +1,1137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cupcake Premium Admin Template</title>
+	
+    <link rel="stylesheet" type="text/css" href="style/reset.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/root.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/grid.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/typography.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="style/jquery-plugin-base.css" />
+    
+    <!--[if IE 7]>	  <link rel="stylesheet" type="text/css" href="style/ie7-style.css" />	<![endif]-->
+    
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery-settings.js"></script>
+	<script type="text/javascript" src="js/toogle.js"></script>
+	<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/jquery.wysiwyg.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="js/raphael.js"></script>
+	<script type="text/javascript" src="js/analytics.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.tabs.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	      
+    
+</head>
+<body>
+
+<div class="wrapper">
+
+
+
+
+	<!-- START HEADER -->
+    <div id="header">
+    
+    
+    	<!-- logo -->
+    	<div class="logo">	<a href="index.html"><img src="img/logo.png" width="112" height="35" alt="logo"/></a>	</div>
+        
+        
+        <!-- notifications -->
+        <div id="notifications">
+        	<a href="index.html" class="qbutton-left"><img src="img/icons/header/dashboard.png" width="16" height="15" alt="dashboard" /></a>
+        	<a href="#" class="qbutton-normal tips"><img src="img/icons/header/message.png" width="19" height="13" alt="message" /> <span class="qballon">23</span> </a>
+        	<a href="#" class="qbutton-right"><img src="img/icons/header/support.png" width="19" height="13" alt="support" /> <span class="qballon">8</span> </a>
+          <div class="clear"></div>
+        </div>
+        
+        
+        <!-- quick menu -->
+        <div id="quickmenu">
+        	<a href="#" class="qbutton-left tips" title="Add a new post"><img src="img/icons/header/newpost.png" width="18" height="14" alt="new post" /></a>
+        	<a id="open-stats" href="#" class="qbutton-right tips" title="Statistics"><img src="img/icons/header/graph.png" width="17" height="15" alt="graph" /></a>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <!-- profile box -->
+        <div id="profilebox">
+        	<a href="#" class="display">
+            	<img src="img/simple-profile-img.jpg" width="33" height="33" alt="profile"/>	<b>Logged in as</b>	<span>Administrator</span>
+            </a>
+            
+            <div class="profilemenu">
+            	<ul>
+                	<li><a href="#">Account Settings</a></li>
+                	<li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        
+        <div class="clear"></div>
+    </div>
+    <!-- END HEADER -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- START MAIN -->
+    <div id="main">
+    
+		
+        
+        
+        
+        <!-- START SIDEBAR -->
+        <div id="sidebar">
+        	
+            <!-- start searchbox -->
+            <div id="searchbox">
+            	<div class="in">
+               	  <form id="form1" name="form1" method="post" action="">
+                  	<input name="textfield" type="text" class="input" id="textfield" onfocus="$(this).attr('class','input-hover')" onblur="$(this).attr('class','input')"  />
+               	  </form>
+            	</div>
+            </div>
+            <!-- end searchbox -->
+            
+            <!-- start sidemenu -->
+            <div id="sidemenu">
+            	<ul>
+                	<li><a href="index.html"><img src="img/icons/sidemenu/laptop.png" width="16" height="16" alt="icon"/>Dashboard</a></li>
+                    <li><a href="form-elements.html"><img src="img/icons/sidemenu/copy.png" width="16" height="16" alt="icon"/>Form Elements</a></li>
+                    <li class="active"><a href="table-chart.html"><img src="img/icons/sidemenu/user.png" width="16" height="16" alt="icon"/>Table &amp; Chart</a></li>
+                	<li><a href="interface-elements.html"><img src="img/icons/sidemenu/lock.png" width="16" height="16" alt="icon"/>Interface Elements</a></li>
+                    <li><a href="typography.html"><img src="img/icons/sidemenu/file_edit.png" width="16" height="16" alt="icon"/>Typography	</a></li>
+                    <li><a href="gallery.html"><img src="img/icons/sidemenu/image.png" width="16" height="16" alt="icon"/>Gallery &amp; Media 	<span class="ballon">9</span>	</a></li>
+                    <li><a href="widgets.html"><img src="img/icons/sidemenu/star.png" width="16" height="16" alt="icon"/>Widgets</a></li>
+                    
+                    <!-- start submenu with icon -->
+                    <li class="subtitle">
+                    	<a class="action tips-right" href="#" title="Submenu with icon"><img src="img/icons/sidemenu/mail.png" width="16" height="16" alt="icon"/>Submenu<img src="img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /></a>
+                    	<ul class="submenu">
+                        <li><a href="#"><img src="img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Search File</a></li>
+                        <li><a href="#"><img src="img/icons/sidemenu/print.png" width="16" height="16" alt="icon"/>New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#"><img src="img/icons/sidemenu/trash.png" width="16" height="16" alt="icon"/>Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu with icon -->
+
+                    <li><a href="error-pages.html"><img src="img/icons/sidemenu/comment.png" width="16" height="16" alt="icon"/>Error Pages</a></li>
+                    <li><a href="buttons-icons.html"><img src="img/icons/sidemenu/arrow_down.png" width="16" height="16" alt="icon"/>Button &amp; Icons</a></li>
+                    <li><a href="grid-styles.html"><img src="img/icons/sidemenu/file.png" width="16" height="16" alt="icon"/>Grid Styles	<span class="ballon">67</span>	</a></li>
+                    <li><a href="alert-dialog-boxes.html"><img src="img/icons/sidemenu/attach.png" width="16" height="16" alt="icon"/>Alert &amp; Dialog Boxes</a></li>
+                    <li><a href="calendar.html"><img src="img/icons/sidemenu/calendar.png" width="16" height="16" alt="icon"/>Calendar</a></li>
+                    
+                    <!-- start submenu without icon -->
+                    <li class="subtitle">
+                    	<a class="action" href="#"><img src="img/icons/sidemenu/download.png" width="16" height="16" alt="icon"/>Submenu Text<img src="img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /> </a>
+                    	<ul class="submenu">
+                        <li><a href="#">Search File</a></li>
+                        <li><a href="#">New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#">Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu without icon -->
+                    
+                </ul>
+            </div>
+            <!-- end sidemenu -->
+            
+        </div>
+        <!-- END SIDEBAR -->
+        
+        
+        
+        
+        
+        
+        
+        <!-- START PAGE -->
+        <div id="page">
+        	
+            	<!-- start stats -->
+                <div id="stats">
+                    <!-- use it up/down on <b> tag for different colors -->
+                	<div class="column">	<b>$326.45</b>	Earnings of today</div>
+                	<div class="column">	<b>$96.25</b>	Earnings of last hour</div>
+                	<div class="column">	<b>23.695</b>	Total Sales</div>
+                	<div class="column">	<b class="down">46.230</b>	Active Comments</div>
+                    <!-- this is last column -->
+                	<div class="column last">	<b class="up">$3.928</b>	every per hours</div>
+                    <a href="#" title="Close Stats" class="close tips">close</a>
+                    <img src="img/icons/mini/stats-arrow-top.png" width="17" height="9" alt="arrow" class="arrow" />
+                </div>
+                <!-- end stats -->
+            	
+                
+                <!-- start page title -->
+                <div class="page-title">
+                	<div class="in">
+                    		<div class="titlebar">	<h2>TABLE &amp; CHART</h2>	<p>Awesome Jquery Table and Chart plugin</p></div>
+                            
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Refresh"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Dashboard"><img src="img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Search on This Page"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Information for this page"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            
+                            <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                
+                
+                
+                
+                
+                
+                
+                	<!-- START CONTENT -->
+                    <div class="content">
+                    
+                    	
+                        
+                        
+                        <!-- START CHART -->
+                        <div class="simplebox grid740">
+                        
+                        	<div class="titleh">
+                            <h3>Statistics Chart</h3>
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+                            
+                            <div class="body">
+                            	
+                                
+                                
+                                <!-- start chart -->
+                                
+        						<div class="chart">
+                                <table id="data">
+                                	<tfoot>
+                                    	<tr>
+                                        	<th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                            <th>7</th>
+                                            <th>8</th>
+                                            <th>9</th>
+                                            <th>10</th>
+                                            <th>11</th>
+                                            <th>12</th>
+                                            <th>13</th>
+                                            <th>14</th>
+                                            <th>15</th>
+                                            <th>16</th>
+                                            <th>17</th>
+                                            <th>18</th>
+                                            <th>19</th>
+                                            <th>19</th>
+                                            <th>20</th>
+                                            <th>22</th>
+                                            <th>23</th>
+                                            <th>24</th>
+                                            <th>25</th>
+                                            <th>26</th>
+                                            <th>27</th>
+                                            <th>28</th>
+                                            <th>29</th>
+                                            <th>30</th>
+                                            <th>31</th>
+                                    	</tr>
+                                	</tfoot>
+                                    
+                                    <tbody>
+                                    	<tr>
+                                        	<td>8</td>
+                                            <td>25</td>
+                                            <td>27</td>
+                                            <td>25</td>
+                                            <td>54</td>
+                                            <td>59</td>
+                                            <td>79</td>
+                                            <td>47</td>
+                                            <td>27</td>
+                                            <td>44</td>
+                                            <td>44</td>
+                                            <td>51</td>
+                                            <td>56</td>
+                                            <td>83</td>
+                                            <td>12</td>
+                                            <td>91</td>
+                                            <td>52</td>
+                                            <td>12</td>
+                                            <td>40</td>
+                                            <td>8</td>
+                                            <td>60</td>
+                                            <td>29</td>
+                                            <td>7</td>
+                                            <td>33</td>
+                                            <td>56</td>
+                                            <td>25</td>
+                                            <td>1</td>
+                                            <td>78</td>
+                                            <td>70</td>
+                                            <td>68</td>
+                                            <td>2</td>
+                                    	</tr>
+                                    </tbody>
+                                </table>
+                                <div id="holder"></div>
+                                </div>
+                                
+                                <!-- end chart -->
+                            
+                            
+                            </div>
+                            
+                        </div>
+                        <!-- END CHART -->
+                    
+                    	
+                        
+                        
+                        
+                        <!-- START AREA CHART -->
+                        <div class="simplebox grid740">
+                        
+                        	<div class="titleh"><h3>Area Chart</h3>
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+                            
+                            <div class="body">
+                            	
+   
+<!-- start area chart javascript codes -->                             
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['corechart']});
+    </script>
+    <script type="text/javascript">
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var countries =
+          ['Bolivia', 'Ecuador',
+           'Madagascar', 'Papua  Guinea', 'Rwanda'];
+        var months = ['2004/05', '2005/06', '2006/07', '2007/08', '2008/09'];
+        var productionByCountry = [[165, 135, 157, 139, 136],
+                                   [938, 1120, 1167, 1110, 691],
+                                   [522, 599, 587, 615, 629],
+                                   [998, 1268, 807, 968, 1026],
+                                   [450, 288, 397, 215, 366]];
+      
+        // Create and populate the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Month');
+        for (var i = 0; i < countries.length; ++i) {
+          data.addColumn('number', countries[i]);
+        }
+        data.addRows(months.length);
+        for (var i = 0; i < months.length; ++i) {
+          data.setCell(i, 0, months[i]);
+        }
+        for (var i = 0; i < countries.length; ++i) {
+          var country = productionByCountry[i];
+          for (var month = 0; month < months.length; ++month) {
+            data.setCell(month, i + 1, country[month]);
+          }
+        }
+        // Create and draw the visualization.
+        var ac = new google.visualization.AreaChart(document.getElementById('visualization'));
+        ac.draw(data, {
+          title : 'Monthly Coffee Production by Country',
+          isStacked: true,
+          width: 700,
+          height: 400,
+          vAxis: {title: "Cups"},
+          hAxis: {title: "Month"}
+        });
+      }
+      
+
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+<!-- end area chart javascript codes -->   
+
+                             
+                             
+                                <!-- start area div -->
+                                <div id="visualization"></div>
+                                <!-- end area div -->
+                            
+                            
+                            
+                            </div>
+                            
+                        </div>
+                        <!-- END AREA CHART -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- START PIE CHART -->
+                        <div class="simplebox grid360-right">
+                        
+                        	<div class="titleh"><h3>Pie Chart</h3>
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+                            
+                            <div class="body">
+                            	
+   
+   <!-- start pie chart javascript codes -->                             
+    <script type="text/javascript">
+    
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+      
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+      
+      // Callback that creates and populates a data table, 
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['Mushrooms', 3],
+        ['Onions', 1],
+        ['Olives', 1], 
+        ['Zucchini', 1],
+        ['Pepperoni', 2]
+      ]);
+
+      // Set chart options
+      var options = {'title':'How Much Pizza I Ate Last Night',
+                     'width':350,
+                     'height':300};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+   <!-- end pie chart javascript codes -->   
+
+                             
+                             
+                                <!-- start chart div -->
+                                <div id="piechart_div"></div>
+                                <!-- end chart div -->
+                            
+                            
+                            
+                            </div>
+                            
+                        </div>
+                        <!-- END PIE CHART -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- START COMBO CHART -->
+                        <div class="simplebox grid360-left">
+                        
+                        	<div class="titleh"><h3>Combo Chart</h3>
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+                            
+                            <div class="body">
+                            	
+   
+<!-- start combo chart javascript codes -->                             
+    <script type="text/javascript">
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var rowData = [['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua  Guinea',
+                        'Rwanda', 'Average'],
+                       ['2004/05', 165, 938, 522, 998, 450, 614.6],
+                       ['2005/06', 135, 1120, 599, 1268, 288, 682],
+                       ['2006/07', 157, 1167, 587, 807, 397, 623],
+                       ['2007/08', 139, 1110, 615, 968, 215, 609.4],
+                       ['2008/09', 136, 691, 629, 1026, 366, 569.6]];
+      
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable(rowData);
+      
+        // Create and draw the visualization.
+        var ac = new google.visualization.ComboChart(document.getElementById('combochart'));
+        ac.draw(data, {
+          title : 'Monthly Coffee Production by Country',
+          width: 330,
+          height: 300,
+          vAxis: {title: "Cups"},
+          hAxis: {title: "Month"},
+          seriesType: "bars",
+          series: {2: {type: "line"}}
+        });
+      }
+
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+<!-- end combo chart javascript codes -->   
+
+                             
+                             
+                                <!-- start chart div -->
+                                <div id="combochart"></div>
+                                <!-- end chart div -->
+                            
+                            
+                            
+                            </div>
+                            
+                        </div>
+                        <!-- END COMBO CHART -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        
+                        
+                        
+                        <!-- START TABLE -->
+                        <div class="simplebox grid740">
+                        
+                        	<div class="titleh">
+                            <h3>Simple Table</h3>
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+                            
+                            	
+                                <table id="myTable" class="tablesorter"> 
+                                	<thead> 
+                                		<tr> 
+                                			<th>Last Name</th> 
+                                			<th>First Name</th> 
+                                			<th>Email</th>
+                                			<th>Due</th> 
+                                			<th>Web Site</th> 
+                                		</tr> 
+                                	</thead> 
+                                    
+                                    <tbody> 
+                                    	<tr> 
+                                    		<td>Smith</td> 
+                                    		<td>John</td> 
+                                    		<td>jsmith@gmail.com</td> 
+                                    		<td>$50.00</td> 
+                                    		<td>http://www.jsmith.com</td> 
+                                    	</tr> 
+                                    
+                                    	<tr> 
+                                    		<td>Bach</td> 
+                                        	<td>Frank</td> 
+                                        	<td>fbach@yahoo.com</td> 
+                                        	<td>$545.00</td> 
+                                        	<td>http://www.frank.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Doe</td> 
+                                        	<td>Jason</td> 
+                                        	<td>jdoe@hotmail.com</td> 
+                                        	<td>$12.00</td> 
+                                        	<td>http://www.jdoe.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Conway</td> 
+                                        	<td>Tim</td> 
+                                        	<td>tconway@earthlink.net</td> 
+                                        	<td>$150.00</td> 
+                                        	<td>http://www.timconway.com</td> 
+                                        </tr> 
+                                    
+                                    	<tr> 
+                                    		<td>Burak</td> 
+                                        	<td>Vanli</td> 
+                                        	<td>bshank@gmail.com</td> 
+                                        	<td>$533.00</td> 
+                                        	<td>http://www.frank.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Doe</td> 
+                                        	<td>Jason</td> 
+                                        	<td>shekc@mail.com</td> 
+                                        	<td>$30.00</td> 
+                                        	<td>http://www.jdoe.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Derp</td> 
+                                        	<td>Derpie</td> 
+                                        	<td>derp@earthlink.net</td> 
+                                        	<td>$390.00</td> 
+                                        	<td>http://www.timconway.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Matt</td> 
+                                        	<td>Daeson</td> 
+                                        	<td>immat@earthlink.net</td> 
+                                        	<td>$120.00</td> 
+                                        	<td>http://www.timconway.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Conway</td> 
+                                        	<td>Tim</td> 
+                                        	<td>tconway@earthlink.net</td> 
+                                        	<td>$20.00</td> 
+                                        	<td>http://www.timconway.com</td> 
+                                        </tr> 
+                                        
+                                        <tr> 
+                                        	<td>Conway</td> 
+                                        	<td>Tim</td> 
+                                        	<td>tconway@earthlink.net</td> 
+                                        	<td>$10.00</td> 
+                                        	<td>http://www.timconway.com</td> 
+                                        </tr> 
+                                        
+                                    </tbody> 
+                                </table>
+                            
+                            
+                        </div>
+                        <!-- END TABLE -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- START TABLE -->
+                        <div class="simplebox grid740">
+                        
+                        	<div class="titleh">
+                        	  <h3>Dynamic Data Table</h3>
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Info About This Widget"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Search"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                                <a class="shortcut tips" href="#" title="Refresh Data"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            <!-- Start Data Tables Initialisation code -->
+							<script type="text/javascript" charset="utf-8">
+								$(document).ready(function() {
+    								oTable = $('#example').dataTable({
+        							"bJQueryUI": true,
+        							"sPaginationType": "full_numbers"
+        							});
+    							} );
+    						</script>
+                            <!-- End Data Tables Initialisation code -->
+
+
+							<table cellpadding="0" cellspacing="0" border="0" class="display data-table" id="example">
+                            
+								<thead>
+									<tr>
+                                    	<th>Year</th>
+                                        <th>Name</th>
+                                        <th>Profile</th>
+                                        <th>Message</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                               	</thead>
+                                
+                                <tbody>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Lion Much</td>
+                                    	<td>Active</td>
+                                    	<td class="center">4256</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Harry Patson</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">36592</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Kerry Merry</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">6525</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1915</td>
+                                    	<td>Flip Yia</td>
+                                    	<td>Active</td>
+                                    	<td class="center">23151</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Smith John</td>
+                                    	<td>Active</td>
+                                    	<td class="center">2331</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1956</td>
+                                    	<td>John Doe</td>
+                                    	<td>Active</td>
+                                    	<td class="center">5042</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Micheal Davis</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">106</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1966</td>
+                                    	<td>Paul Hatson</td>
+                                    	<td>Active</td>
+                                    	<td class="center">403</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1958</td>
+                                    	<td>Cloe Lorem</td>
+                                    	<td>Active</td>
+                                    	<td class="center">3265</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1905</td>
+                                    	<td>Ipsum Dolor Sit </td>
+                                    	<td>Active</td>
+                                    	<td class="center">33</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1852</td>
+                                    	<td>Amet Lion</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">69542</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Lion Much</td>
+                                    	<td>Active</td>
+                                    	<td class="center">4256</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Harry Patson</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">36592</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1963</td>
+                                    	<td>Kerry Merry</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">6525</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Flip Yia</td>
+                                    	<td>Active</td>
+                                    	<td class="center">23151</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1956</td>
+                                    	<td>Smith John</td>
+                                    	<td>Active</td>
+                                    	<td class="center">2331</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>2011</td>
+                                    	<td>John Doe</td>
+                                    	<td>Active</td>
+                                    	<td class="center">5042</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Micheal Davis</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">106</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Paul Hatson</td>
+                                    	<td>Active</td>
+                                    	<td class="center">403</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>2005</td>
+                                    	<td>Cloe Lorem</td>
+                                    	<td>Active</td>
+                                    	<td class="center">3265</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Ipsum Dolor Sit </td>
+                                    	<td>Active</td>
+                                    	<td class="center">33</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Amet Lion</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">69542</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1967</td>
+                                    	<td>Lion Much</td>
+                                    	<td>Active</td>
+                                    	<td class="center">4256</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Harry Patson</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">36592</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Kerry Merry</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">6525</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1923</td>
+                                    	<td>Flip Yia</td>
+                                    	<td>Active</td>
+                                    	<td class="center">23151</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Smith John</td>
+                                    	<td>Active</td>
+                                    	<td class="center">2331</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>John Doe</td>
+                                    	<td>Active</td>
+                                    	<td class="center">5042</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1966</td>
+                                    	<td>Micheal Davis</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">106</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Paul Hatson</td>
+                                    	<td>Active</td>
+                                    	<td class="center">403</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Cloe Lorem</td>
+                                    	<td>Active</td>
+                                    	<td class="center">3265</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Ipsum Dolor Sit </td>
+                                    	<td>Active</td>
+                                    	<td class="center">33</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Amet Lion</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">69542</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1952</td>
+                                    	<td>Lion Much</td>
+                                    	<td>Active</td>
+                                    	<td class="center">4256</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1989</td>
+                                    	<td>Harry Patson</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">36592</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Kerry Merry</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">6525</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Flip Yia</td>
+                                    	<td>Active</td>
+                                    	<td class="center">23151</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Smith John</td>
+                                    	<td>Active</td>
+                                    	<td class="center">2331</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>John Doe</td>
+                                    	<td>Active</td>
+                                    	<td class="center">5042</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Micheal Davis</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">106</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Paul Hatson</td>
+                                    	<td>Active</td>
+                                    	<td class="center">403</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Cloe Lorem</td>
+                                    	<td>Active</td>
+                                    	<td class="center">3265</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+                                    <tr class="gradeA">
+                                    	<td>1972</td>
+                                    	<td>Ipsum Dolor Sit </td>
+                                    	<td>Active</td>
+                                    	<td class="center">33</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                
+                                	<tr class="gradeA">
+                                    	<td>1994</td>
+                                    	<td>Amet Lion</td>
+                                    	<td>Not Created</td>
+                                    	<td class="center">69542</td>
+                                    	<td class="center">A</td>
+                                    </tr>
+                                    
+								</tbody>
+							</table>
+
+                            
+                            
+                            
+                        </div>
+                        <!-- END TABLE -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                    </div>
+                    <!-- END CONTENT -->
+                
+            
+            
+            
+            
+            
+            
+        </div>
+        <!-- END PAGE -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="clear"></div>
+    </div>
+    <!-- END MAIN -->
+    
+    
+    
+    
+    
+    
+    <!-- START FOOTER -->
+    <div id="footer">
+    	<div class="left-column">© Copyright 2012 - All rights reserved.</div>
+        <div class="right-column">Cupcake theme by <a href="http://themeforest.net/user/egemem" target="_blank">egemem</a></div>
+    </div>
+    <!-- END FOOTER -->
+    
+    
+    
+    
+    
+
+
+
+
+
+</div>
+
+</body>
+</html>

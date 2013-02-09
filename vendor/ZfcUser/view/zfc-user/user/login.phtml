@@ -1,0 +1,82 @@
+<?php
+// module/User/view/user/user/add.phtml:
+
+$title = 'Authentification';
+$this->headTitle($title);
+?>
+
+<div id="page">
+
+
+
+                    <!-- start page title -->
+                    <div class="page-title">
+                        <div class="in">
+                                <div class="titlebar">	<h2><?php echo $this->escapeHtml($title); ?></h2>	<p>Veuillez s'authentifier pour acc&egrave;der &agrave; l'application</p></div>
+
+
+                                <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- START CONTENT -->
+                    <div class="content">
+                    <!-- START FORMULAIRE -->
+
+                        	<div class="simplebox grid740" style="z-index: 720;">
+                            	<div class="titleh" style="z-index: 710;">
+                                	<h3>Formulaire d'authentification</h3>
+                                </div>
+                                <div class="body" style="z-index: 690;">
+								<?php
+									$form = $this->loginForm;
+									$form->prepare();
+									$form->setAttribute('action', $this->url('zfcuser/login'));
+									$form->setAttribute('method', 'post');
+									?>
+
+									<?php echo $this->form()->openTag($form) ?>
+									<?php echo $this->formElementErrors($form->get('identity')) ?>
+									   <div class="st-form-line" style="z-index: 680;">
+                                    	<span class="st-labeltext"><?php echo $this->formLabel($form->get('identity')) ?></span>
+										<?php echo $this->formInput($form->get('identity')) ?>
+                                    <div class="clear" style="z-index: 670;"></div>
+                                    </div>
+                                    <div class="st-form-line" style="z-index: 680;">
+                                    	<span class="st-labeltext"><?php echo $this->formLabel($form->get('credential')) ?></span>
+										<?php echo $this->formInput($form->get('credential')) ?>
+                                    <div class="clear" style="z-index: 670;"></div>
+                                    </div>
+
+									        <?php if ($this->redirect): ?>
+									        <div class="button-box" style="z-index: 460;">
+									            <input type="hidden" name="redirect" value="<?php echo $this->redirect ?>" />
+									        </div>
+									        <?php endif ?>
+
+									        <div class="button-box" style="z-index: 460;">
+									        <?php echo $this->formButton($form->get('submit')) ?></dd>
+									   		</div>
+
+									<?php echo $this->form()->closeTag() ?>
+
+									<?php if ($this->enableRegistration) : ?>
+									<p align="right" class="titlebar" style="margin-bottom:10px;margin-right:10px;">Non enregistr&eacute;? <a href="<?php echo $this->url('zfcuser/register') . ($this->redirect ? '?redirect='.$this->redirect : '') ?>">Inscrivez-vous!</a><br/></p>
+								<?php endif; ?>
+
+
+
+
+                                </div>
+                            </div>
+
+
+                        <!-- END FORMULAIRE -->
+
+                    </div>
+                    <!-- END CONTENT -->
+
+            </div>
+
+
