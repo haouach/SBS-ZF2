@@ -8,7 +8,7 @@ systems. This application is meant to be used as a starting place for those
 looking to get their feet wet with ZF2.
 
 
-Installation
+Installations
 ------------
 
 Using Composer (recommended)
